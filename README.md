@@ -1,2 +1,5 @@
-# pixelsorter
- A small pixelsorter script i made to learn.
+# pixelsortergui <br>
+
+fork of zeptofine's pixelsorter with gui (very early wip, not ready for general use) <br>
+
+<img src="/pxsort.png"> </img>

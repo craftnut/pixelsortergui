@@ -100,7 +100,7 @@ if __name__ == "__main__":
     # User choice for files
     # path = Path("/mnt/Toshiba/GitHub/Console_Image_Utils/sequence/*")
     # path = Path("pfp.png")
-    images = [Path("C:/Users/xpsyc/Pictures/pfp.png")]
+    images = [Path("./test.png")]
     
     # img = cv2.imread(str(images[0]))
     # cv2.imshow('imge', img)
@@ -112,7 +112,7 @@ if __name__ == "__main__":
     # images = {j for i in whitelist for j in images if i in str(j)}
 
     # out = path.parent.with_name(f"{path.parent.name}-pixelsorted")
-    out = Path("C:/Users/xpsyc/Pictures/pfp-pixelsorted.png")
+    out = Path("./testsorted.png")
     # out.mkdir(exist_ok=True)
 
     # changes which direction the sorters will go
@@ -123,7 +123,7 @@ if __name__ == "__main__":
     diff = 32
     preview = True
 
-    argtuples = [(img, str(out/img.name), diff, preview, swap_horizontal, swap_vertical, swap_axes)
+    argtuples = [(img, str(out), diff, preview, swap_horizontal, swap_vertical, swap_axes)
                  for img in images]
 
     threads = int(os.cpu_count() / 4 * 3)
